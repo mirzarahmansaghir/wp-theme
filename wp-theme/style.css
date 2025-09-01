@@ -1,0 +1,192 @@
+/*
+Theme Name: Portfolio Theme
+Author: Mirza Abdul Rahman
+Description: A beginner WordPress portfolio theme.
+Version: 1.0
+*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f5f5;
+  color: #111;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  background: #1f2937;
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Wrap menu items */
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-list li a:hover {
+  border-bottom: 2px solid #60a5fa;
+}
+
+.cta {
+  padding: 10px 20px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.cta:hover {
+  background: #1e40af;
+}
+
+.blog-header {
+  background: #e0f2fe;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.post {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.post h2 a {
+  color: #1e293b;
+  text-decoration: none;
+}
+
+.post h2 a:hover {
+  color: #2563eb;
+}
+
+.meta {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.read {
+  display: inline-block;
+  margin-top: 8px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.read:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* --- Responsive Styles --- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list {
+    gap: 10px;
+  }
+
+  .cta {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .blog-header {
+    padding: 15px;
+  }
+
+  .post {
+    padding: 15px;
+  }
+
+  .post h2 {
+    font-size: 1.4rem;
+  }
+
+  .meta {
+    font-size: 13px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .cta {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .post {
+    padding: 12px;
+  }
+
+  .post h2 {
+    font-size: 1.2rem;
+  }
+
+  .meta {
+    font-size: 12px;
+  }
+}
